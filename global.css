@@ -1,0 +1,8 @@
+html { Do not use emppty rulesets
+
+ }
+
+ body { 
+ 	color:#555;
+ 	background:#000;
+  }

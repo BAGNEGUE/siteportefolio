@@ -1,0 +1,1122 @@
+<!Doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" contentwidth="device-width, initial-scale=1.0">
+<title>portfolio Developpeur WEB</title>
+<meta name="description" content="Portfolio de Bagnegue - Developpeur Web">
+<link rel="stylesheet" href="style.css">
+<script>
+	console.log("toto");
+// string
+let myVar = "ma variable ";
+const myVar2 = "ma variable 2";
+let div = document.createElement('div');
+div.classList.add('top');
+div.innerHtml = '<span>top zone</ul>'; 
+// fonction du theme
+
+function menuMobile(){
+	const header = document.querySelector('.burger');
+	 const header = document.querySelector('.header');
+
+	 btn.addEventListener('click' , () => {
+
+	 	header.classList.toggle('show-nav');
+	 	console.log('click');
+
+	 	
+
+	 })
+}
+menuMobile();
+
+
+</script> 
+<style>
+	* {
+		box-sizing: border-box;
+		margin:0;
+		padding: 0;
+
+
+	}
+	html { 
+		font-size: 62.5%;
+
+	}
+	body {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 1.6rem;
+		ligne-height: 1.6;
+		color: red;
+		color:#555;
+		margin:0;
+		
+		}
+		h1, h2, h3, h4, h5, h6{
+			color: #333;
+		}
+
+		h1,
+		.h1{
+			font-size: 3.1rem;
+		}
+
+		h2, h2{
+			font-size: 2.8rem;
+		}
+		h3, 
+		.h3{font-size: 2.1rem;
+
+		}
+		a {
+			text-decoration: none;
+
+		}
+		img{
+			max-width: 100%
+			height: auto;
+		}
+		ul {
+			padding-left: 2rem;
+		}
+
+		a:hover {
+
+			color: red;
+		}
+
+		li {
+			margin-bottom: 1rem;
+		}
+
+		.list-unstyled {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.category{
+			margin: 0;
+			font-size: 1rem;
+			text-transform: uppercase;
+			color: #5b6c78;
+		}
+
+		.contenair {
+					padding:1rem 2rem;
+					
+
+				}
+				.d-flex {
+					display: flex;
+					align-items: center;
+					justify-content:space-between;
+
+
+				}
+
+				.grid {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+
+				.grid__item {
+					flex-gros
+					flex-shrink: 0;
+					width: 100%;
+					padding:1rem;
+				}
+
+
+		@media screen and (min-widht:750px){
+			.contenair {
+				max-width: 1200px%;
+				margin:0 auto;
+				padding: 2rem;
+				
+
+				}
+				.grid__item{
+					max-width: 50%;
+
+				}
+
+			}
+			/*section*/
+			section {
+
+				padding: 5.5rem 0;
+			}
+			.section-title{
+				margin-top: 0;
+				color: #000;
+				font-size: 3.8rem;
+				text-transform: uppercase;
+			}
+			.section-header {
+				text-align: center;
+
+			}
+
+
+		.header {
+		
+ 	background: #FFFFFF;
+ 	border-bottom: 1px solid #EEE;
+ 	position: sticky;
+ 	top: 0;
+ 	z-index: 1;
+
+	}
+
+	
+
+	}
+
+	.header li {
+		display: inline-flex;
+		align-items: center;
+		padding: 0 .5rem;
+
+
+	}
+	.header a {
+		color: #333;
+	}
+
+	.header a:hover {
+
+			color: red;
+			}
+
+	.header .right {
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+
+
+	}
+
+	.socials {
+		display: flex;
+	}
+		.socials li{
+		margin-bottom: 0;
+	}
+
+	.socials a {
+		padding: 0 2px;
+		
+	}
+
+
+	.socials .icon{
+		height: 18px;
+
+	}
+	.burger{
+		background: none;
+		border:none;
+		widht: 35px;
+		height: 35px;
+		cursor: pointer;
+		position: relative;
+		margin-left: 1rem;
+
+
+
+	}
+
+	.burger .bar {
+
+		display: block;
+		widht: 22px;
+		height: 3px;
+		background: #333;
+	}
+
+	.burger .bar::before, .burger .bar::after {
+
+		display: block;
+		content:"";
+		widht: 22px;
+		height: 3px;
+		background: #333;
+		position: absolute;
+		top:0;
+	}
+
+	.burger .bar::before{
+		transform: translateY(-8px);
+
+	}
+
+	.burger .bar::before{
+		transform: translateY(8px);
+
+	}
+
+	@media screen and (max-width:749px){
+		nav { 
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			position: fixed;
+			top: 55px;
+			left: 110%;
+			width: 100%;
+			overflow: hidden;
+			opacity: 0;
+			height: calc(100vh - 55px);
+			background: #F5F5F5;
+			transition: all .4s ease-out;
+
+
+	}
+	nav .menu li {
+		display: flex;
+		justify-content: center;
+	}
+
+	nav .menu a {
+		display: block;
+		font-size: 2rem;
+		padding: 2rem;
+		}
+
+
+		.show-nav nav{
+			opacity: 1;
+			width: 100%;
+			left: 0;
+			z-index: 2;
+
+
+		}
+
+		.show-nav .burger .bar {
+			width:0;
+		}
+
+		.show-nav .burger .bar::before {
+			transform:rotate(-45deg);
+		}
+
+		.show-nav .burger .bar::after {
+			transform:rotate(45deg);
+		}
+
+
+	}
+	}
+
+
+
+
+
+	@media screen and (min-widht:750px){
+
+		.navbar {
+		display: flex;
+
+	}
+
+	.burger{
+		display: none;
+
+	}
+
+
+		}
+
+		.hero {
+			background: #5b6c78;
+			color: #FFF;
+			padding: 1rem 0 0 0;
+
+		}
+		.hero .title{
+			color: inherit;
+			font-size: 5rem;
+			margin: 1.6rem 0 0 0;
+		}
+		.hero__item{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		.hero__item span {
+			text__transform: uppercase;
+		}
+		.hero__item.left{
+			animation-duretion: 1s;
+			animation-name: slideInleft; 
+			}
+			.hero__item.right{
+			animation-duretion: 1s;
+			animation-name: slideRight; 
+			}
+
+
+			@media screen and (min-widht:750px){
+
+		.hero__item.left{
+			order:2;
+			
+		}
+		
+		.hero__item.right{
+			order:1;
+			
+		}
+}
+                .about .section-title{
+                	margin-top: 2.8rem;
+
+                }
+
+
+
+
+
+			@media screen and (min-widht:750px){
+
+		.about img{
+			padding:-right: 3rem;
+			
+     }
+		}
+		.competences {
+			backround: #F5F5F5;
+
+		}
+		
+		
+		.competences__icon {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 90px;
+			width: 90px;
+			
+			border:2px solid #5b6c78;
+			border-radius: 50%;
+
+
+		}
+		.competences__icon svg{
+			height: 35px;
+		}
+		.competences-content{
+			flex:1;
+		}
+		.competences h3{
+			margin-bottom: 0;
+		}
+		
+		
+		@media screen and (min-widht:749px){
+
+		
+		.competences{
+		text-align: center;
+
+		}
+		competences__icon {
+			margin:0 auto;
+		}
+		}
+
+		@media screen and (min-widht:750px){
+			.competences__icon{
+				display: flex;
+				align-items: center;
+			}
+			.competences__icon{
+				margin-right:2rem;
+			}
+
+		}
+		.Diplomes h4, .Portfolio P {
+			margin:0 0 0.3rem 0;
+		}
+
+		.Diplomes li {
+
+			backround-color:#555;
+			border-left: 3px solid rgba(91,107,120);
+			padding: .9rem 2rem;
+		}
+
+		.Diplomes .progressbar {
+			background: #F5F5F5;
+			color: #FFF;
+			margin-bottom: 1rem;
+			
+		}
+
+		.Diplomes .bar {
+			background: #5b6c78;
+			padding: 1rem;
+
+		}
+
+
+		.Portfolio {
+			background: #F5F5F5;
+		}
+		.Portfolio .grid__item {
+			max-width: 50%;
+			margin-bottom: 0;
+
+		}
+		.Portfolio-filters .grid__item {
+			max-width: 50%;
+			margin-bottom: 0;
+
+		}
+		.Portfolio-filters a {
+			color: #333;
+			background: #EEE;
+			display: flex;
+			flex: 1;
+			justify-content: center;
+			padding:1rem;
+		}
+		.Portfolio-filters a.active{
+			color: #FFF;
+			background: #5b6c78;
+		}
+
+
+
+		.card{
+			background: #FFF;
+			text-transform: uppercase;
+			position: relative;
+			box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+			border: 1px solid #EEE;
+		}
+		.card__inner {
+			padding:2rem;
+		}
+
+		.card__title {
+			margin:0 0 1rem;
+			font-size:1.6rem;
+		}
+		.card__overlay{
+			
+			background: rgba(0, 0, 0, 0.8);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height:100% ;
+
+		}
+		.card__overlay{
+			font-size: 4.5rem;
+			color: #FFF;
+			
+
+		}
+
+
+		@media screen and (min-widht:749px){
+
+		.Portfolio . a {
+			font-size: 1.4rem;
+		}
+		}
+
+
+		@media screen and (min-widht:750px){
+		.Portfolio-filters .grid__item{
+			max-width: 25%;
+		}
+		
+
+		.Portfolio.grid__item{
+			max-width: 33.3333%;
+		}
+		
+
+		}
+		.card{
+			background: #FFF;
+			text-transform: uppercase;
+			position: relative;
+		}
+		.card__inner {
+			padding:2rem;
+		}
+
+		.card__title {
+			margin:0 0 1rem;
+			font-size:1.6rem;
+		}
+		.card__overlay{
+			
+			background: rgba(0, 0, 0, 0.8);
+			position: absolute;
+			top: 0;
+			z-index:0;
+			width: 100%;
+			height:100% ;
+			display: none;
+
+		}
+		.card__overlay{
+			font-size: 4.5rem;
+			color: #FFF;
+			flex:1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100% ;
+			}
+
+			/*FOOTER*/
+
+
+		footer {
+			background: #000;
+			color:#EEE;
+			text-align: center;
+			 font-size: 1.4rem;
+		}
+		footer P {
+			margin: 0;
+		}
+		footer .grid {
+			align-items: center;
+		}
+		footer .socials {
+			justify-content: center;
+			text-align: center;
+		}
+		footer .socials li {
+			padding:0 .7rem;
+		}
+		footer .socials a {
+			color: #FFF;
+			border:1px solid #FFF;
+			border-radius: 50%;
+			padding: 1rem;
+			width: 42px;
+			height: 42px;
+			display: flex;
+			justify-content: center;
+
+		}
+		footer .socials a:hover {
+			background: #FFF;
+			color: #333;
+		}
+		footer .socials .icon {
+			height: auto;
+		}
+
+		@media screen and (min-widht:750px){
+
+		}
+		.toto {
+			color:#555;
+		}
+		@media screen and (min-widht:750px){
+			footer {
+				text-align: left;
+			}
+			footer .grid__item {
+				max-width: 33.333%;
+			}
+
+
+		}
+		@keyframes slideInleft {
+			form {
+				transform: translateX(-110%);
+			}
+			to {
+				transform: translateX(0);
+			}
+		}
+		@keyframes slideInRight {
+			form {
+				transform: translateX(110%);
+			}
+			to {
+				transform: translateX(0);
+			}
+		}
+
+
+
+
+</style>
+</head>
+<body>
+	<header class="header">
+		<div class="contenair d-flex">
+			<div class="logo">
+				Bagnegue mvourebia christ-bruxie
+			</div>
+			<nav class="navbar">
+				<ul class="menu list-unstyled">
+					<li><a href="#hero">Accueil</a></li>
+					<li><a href="blog.html">blog</a></li>
+					<li><a href="#about">A propos</a></li>
+					<li><a href="#competences">competences</a></li>
+					<li><a href="#Diplomes">Diplomes</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#References">References</a></li>
+					<li><a href="#me contacter">Me contacter</a></li>
+				
+				</ul>
+			</nav>
+			<div class="right">
+				<ul class="socials list-unstyled">
+					<li><a href="https://google.fr" target="_blank">
+						
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg class="icon facebook" width="20px" height="20px" viewBox="126.445 2.281 589 589" xmlns="http://www.w3.org/2000/svg"><circle cx="420.945" cy="296.781" r="294.5" fill="#3c5a9a"/><path d="M516.704 92.677h-65.239c-38.715 0-81.777 16.283-81.777 72.402.189 19.554 0 38.281 0 59.357H324.9v71.271h46.174v205.177h84.847V294.353h56.002l5.067-70.117h-62.531s.14-31.191 0-40.249c0-22.177 23.076-20.907 24.464-20.907 10.981 0 32.332.032 37.813 0V92.677h-.032z" fill="#ffffff"/></svg>
+
+					</a></li>
+					<li><a href="https://google.fr" target="_blank">
+						
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg class="icon instagram" width="20px" height="20px" viewBox="0 0 3364.7 3364.7" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="0" cx="217.76" cy="3290.99" r="4271.92" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#fa8f21"/><stop offset=".78" stop-color="#d82d7e"/></radialGradient><radialGradient id="1" cx="2330.61" cy="3182.95" r="3759.33" gradientUnits="userSpaceOnUse"><stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"/><stop offset="1" stop-color="#8c3aaa"/></radialGradient></defs><path d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9" fill="url(#0)"/><path d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9" fill="url(#1)"/><path d="M1269.25,1689.52c0-230.11,186.49-416.7,416.6-416.7s416.7,186.59,416.7,416.7-186.59,416.7-416.7,416.7-416.6-186.59-416.6-416.7m-225.26,0c0,354.5,287.36,641.86,641.86,641.86s641.86-287.36,641.86-641.86-287.36-641.86-641.86-641.86S1044,1335,1044,1689.52m1159.13-667.31a150,150,0,1,0,150.06-149.94h-0.06a150.07,150.07,0,0,0-150,149.94M1180.85,2707c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28,7.27-505.15c5.55-121.87,26-188,43-232.13,22.72-58.36,49.78-100,93.5-143.78s85.32-70.88,143.78-93.5c44-17.16,110.26-37.46,232.13-43,131.76-6.06,171.34-7.27,505-7.27S2059.13,666,2191,672c121.87,5.55,188,26,232.13,43,58.36,22.62,100,49.78,143.78,93.5s70.78,85.42,93.5,143.78c17.16,44,37.46,110.26,43,232.13,6.06,131.87,7.27,171.34,7.27,505.15s-1.21,373.28-7.27,505.15c-5.55,121.87-25.95,188.11-43,232.13-22.72,58.36-49.78,100-93.5,143.68s-85.42,70.78-143.78,93.5c-44,17.16-110.26,37.46-232.13,43-131.76,6.06-171.34,7.27-505.15,7.27s-373.28-1.21-505-7.27M1170.5,447.09c-133.07,6.06-224,27.16-303.41,58.06-82.19,31.91-151.86,74.72-221.43,144.18S533.39,788.47,501.48,870.76c-30.9,79.46-52,170.34-58.06,303.41-6.16,133.28-7.57,175.89-7.57,515.35s1.41,382.07,7.57,515.35c6.06,133.08,27.16,223.95,58.06,303.41,31.91,82.19,74.62,152,144.18,221.43s139.14,112.18,221.43,144.18c79.56,30.9,170.34,52,303.41,58.06,133.35,6.06,175.89,7.57,515.35,7.57s382.07-1.41,515.35-7.57c133.08-6.06,223.95-27.16,303.41-58.06,82.19-32,151.86-74.72,221.43-144.18s112.18-139.24,144.18-221.43c30.9-79.46,52.1-170.34,58.06-303.41,6.06-133.38,7.47-175.89,7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2586.8,537.06,2504.71,505.15c-79.56-30.9-170.44-52.1-303.41-58.06C2068,441,2025.41,439.52,1686,439.52s-382.1,1.41-515.45,7.57" fill="#ffffff"/></svg>
+					</a></li>
+					<li><a href="https://google.fr" target="_blank">
+						
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg class="icon linkedin" width="20px" height="20px" viewBox="7.025 7.025 497.951 497.951" xmlns="http://www.w3.org/2000/svg"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-974.482" y1="1306.773" x2="-622.378" y2="1658.877" gradientTransform="translate(1054.43 -1226.825)"><stop offset="0" stop-color="#2489be"/><stop offset="1" stop-color="#0575b3"/></linearGradient><path d="M256 7.025C118.494 7.025 7.025 118.494 7.025 256S118.494 504.975 256 504.975 504.976 393.506 504.976 256C504.975 118.494 393.504 7.025 256 7.025zm-66.427 369.343h-54.665V199.761h54.665v176.607zM161.98 176.633c-17.853 0-32.326-14.591-32.326-32.587 0-17.998 14.475-32.588 32.326-32.588s32.324 14.59 32.324 32.588c.001 17.997-14.472 32.587-32.324 32.587zm232.45 199.735h-54.4v-92.704c0-25.426-9.658-39.619-29.763-39.619-21.881 0-33.312 14.782-33.312 39.619v92.704h-52.43V199.761h52.43v23.786s15.771-29.173 53.219-29.173c37.449 0 64.257 22.866 64.257 70.169l-.001 111.825z" fill="url(#a)"/></svg>
+					</a></li>
+				</ul>
+				<button class="burger"><span class="bar">-</span></button>
+							</div>
+	</header>
+
+	<section id="hero" class="hero">
+		<div class="contenair">
+			<div class="grid">
+				<div class="hero__item left">
+					<span>Etudiant Developpeur Web</span>
+					<h1 class="title">Hello, je suis Christ Bagnegue</h1>
+					<p>etudiant en bts  bts sio slam</p>
+					</div>
+					<div class="hero__item right">
+						<div class="hero__image.png">
+							<img widht="200" height="200" src="./img/image.png.jpg" alt="christ developpeur web">
+						</div>
+						</div>
+						</div>
+
+
+
+
+	<section id="about" class="">
+		<div class="contenair">
+			<div class="grid">
+				<div class="grid__item">
+					<img widht="500" height="400" src="./img/ing.jpg" alt="christ developpeur web">
+				</div>
+				<div class="grid__item">
+					<h2 class="section-title">A propos</h2>
+					<h3>qui suis-je</h3>
+					<p>Je suis Bagnegue mvourebia christ bruxie, etudiant en Slam sio , j ai integrer l ecole iris de paris en 2021 , ayant obtenu mon bac technologique, j ai donc decide de poursuivre dans les etudes dans le domaine informatique qui me passionne enormement</p>
+					<ul>
+						<li>Liste</li>
+							<li>Liste</li>
+								<li>Liste</li>
+									<li>Liste</li>
+										<li>Liste</li>
+										<ul>
+						</div>
+	</section >
+
+
+
+
+    <section id="competences" class="Competences">
+    	<div class="contenair">
+    		<div class="section-header">
+    			<h2 class="section-title">Mes competences</h2>
+	    			
+    		</div>
+    		<div class="grid">
+				<div class="grid__item ">
+					<h3>Domaines de competences<h3>
+						<ul class="list-unstyled">
+							<li>
+								<h4>Competences</h4>
+								<p>Description de la competence</p>
+							</li>
+
+							<li>
+								<h4>Competences</h4>
+								<p>Description de la competence</p>
+							</li>
+
+							<li>
+								<h4>Competences</h4>
+								<p>Description de la competence</p>
+							</li>
+
+							<li>
+								<h4>Competences</h4>
+								<p>Description de la competence</p>
+							</li>
+
+							<li>
+								<h4>Competences</h4>
+								<p>Description de la competence</p>
+							</li>
+
+							<li>
+								<h4>Competences</h4>
+								<p>Description de la competence</p>
+							</li>
+
+							<li>
+								<h4>Competences</h4>
+								<p>Description de la competence</p>
+							</li>
+
+							<li>
+								<h4>Competences</h4>
+								<p>Description de la competence</p>
+							</li>
+
+							<li>
+								<h4>Competences</h4>
+								<p>Description de la competence</p>
+							</li>
+
+
+
+
+    		</div>
+    		<div class="grid__item ">
+    			<h3>Competences en developpement</h3>
+    			<div class="progressbar">
+    				<div class="bar" style="width: 75%;">HTML</div>
+    				</div>
+
+    				<div class="progressbar">
+    				<div class="bar">CSS</div>
+    				</div>
+
+    				<div class="progressbar">
+    				<div class="bar">JAVASCRIPT</div>
+    				</div>
+
+    				<div class="progressbar">
+    				<div class="bar">PHP</div>
+    				</div>
+
+    				<div class="progressbar">
+    				<div class="bar">C++</div>
+    				</div>
+
+    				<div class="progressbar">
+    				<div class="bar">JAVA</div>
+    				</div>
+
+    				<div class="progressbar">
+    				<div class="bar"></div>
+    				</div>
+
+    				
+
+
+
+    			<h3>Competences en base de donnees</h3>
+    			<div class="progressbar">
+    				<div class="bar">Mysql</div>
+    				</div>
+
+    				<div class="progressbar">
+    				<div class="bar">Merise</div>
+    				</div>
+
+
+
+    				<div class="progressbar">
+    				<div class="bar">Pdo</div>
+    				</div>
+
+    				<div class="progressbar">
+    				<div class="bar">Oracle</div>
+    				</div>
+
+    				
+
+
+    			<h3>Autres</h3>
+    			<div class="progressbar">
+    				<div class="bar">RGPD</div>
+    				</div>
+
+    				<div class="progressbar">
+    				<div class="bar">Wordpress</div>
+    				</div>
+
+
+
+    				<div class="progressbar">
+    				<div class="bar">Squarespace</div>
+    				</div>
+
+    				
+
+
+
+
+
+
+    		  
+    			</div>
+    			</div>
+    			</div>
+
+
+    	
+    
+    </section >
+    <section id="Diplomes" class="Diplomes">
+    	<h2 class="section-title">Mes Diplomes</h2>
+
+    </section >
+    <section id="portfolio" class="Portfolio">
+    	<div class="contenair">
+    		<div class="section-header">
+    			<h2 class="section-title">Mon porfolio</h2>
+    			
+    			    		</div>
+    		<ul class="grid portfolio-filters list-unstyled">
+				<li class="grid__item">
+					<a href="#" class="active">Tous les projets</a>
+
+					<li class="grid__item">
+					<a href="#">ma veille technologique</a>
+					<div class="card_inner">
+							<h3 class="card_Titre">ma veille technologique</h3>
+							<p class="category">ma veille technologique</p>
+							</div>
+							<div class="card_overlay">
+								<a href="C:\Users\hp\Downloads\ma veille technologique.pdf">+</a>
+								</div>
+
+					
+
+					<li class="grid__item">
+						<p class="category">Ecole IRIS</p>
+					<a href="https://ecoleiris.fr/">+</a>
+
+					<li class="grid__item">
+					<a href="#">SITE SCOLARITE</a>
+				</li>
+			</ul>
+			<div class="grid">
+				<div class="card_item">
+					<div class="card">
+						<img src="https://picsum.photos/600/400?random=5" alt="projet de la ville" class="card_image">
+						<div class="card_inner">
+							<h3 class="card_Titre">PPE</h3>
+							<p class="category">Ppe</p>
+							</div>
+							<div class="card_overlay">
+								<a href="#">+</a>
+								</div>
+								</div>
+								<div class="card_item">
+					<div class="card">
+						<img src="https://picsum.photos/600/400?random=1" alt="projet de la ville" class="card_image">
+						<div class="card_inner">
+							<h3 class="card_Titre">SITE SCOLARITE</h3>
+							<p class="category">SITE SCOLARITE</p>
+							</div>
+							<div class="card_overlay">
+								<a href="#">+</a>
+								</div>
+								</div>
+								<div class="card_item">
+					<div class="card">
+						<img src="https://picsum.photos/600/400?random=2" alt="projet de la ville" class="card_image">
+						<div class="card_inner">
+							<h3 class="card_Titre">GLPI</h3>
+							<p class="category">GLPI</p>
+							</div>
+							<div class="card_overlay">
+								<a href="C:\Users\hp\Downloads\DOCUMENT GLPI BAGNEGUE.pdf">+</a>
+								</div>
+								</div>
+								<div class="card_item">
+					<div class="card">
+						<img src="https://picsum.photos/600/400?random=3" alt="projet de la ville" class="card_image">
+						<div class="card_inner">
+							<h3 class="card_Titre">ECOLE IRIS</h3>
+							<p class="category">Ecole Iris</p>
+							</div>
+							<div class="card_overlay">
+								<a href="#">+</a>
+								</div>
+								</div>
+								<div class="card_item">
+					<div class="card">
+						<img src="https://picsum.photos/600/400?random=4" alt="projet de la ville" class="card_image">
+						<div class="card_inner">
+							<h3 class="card_Titre">ORANGE</h3>
+							<p class="category">ORANGE</p>
+							</div>
+							<div class="card_overlay">
+								<a href="#">+</a>
+								</div>
+								</div>
+
+
+
+
+    	</div>
+
+
+
+
+    	</div>
+
+
+
+
+    	</div>
+
+
+
+
+    	</div>
+
+
+
+
+    	</div>
+    	</div>
+    	</div>
+
+    </section >
+    <section id="References" class="References">
+
+    	
+    	<div class="contenair">
+    		<div class="section-header">
+    			<div class='ref_description Itemcenter'>
+    				<h2 class="section-title">References</h2>
+						<h2>Okacha Benhamed</h2>
+			  			<p>Professeur d'informatique</p>
+			  			<p>Base de données, architecture logicielle</p>
+			  			<p>Ecole Iris Informatique de Paris, France</p>
+			  			<p class='mail_ref'><a href="mailto:pascal.colin@univ-savoie.fr">pascal.colin@univ-savoie.fr</a></p>
+
+
+    	<div class="contenair">
+    		<div class="section-header">
+    			<div class='ref_description Itemcenter'>
+    				<h2 class="section-title">References</h2>
+						<h2>chouarki</h2>
+			  			<p>Professeur d'informatique</p>
+			  			<p>Base de données</p>
+			  			<p>Ecole Iris Informatique de Paris, France</p>
+			  			<p class='mail_ref'><a href="mailto:pascal.colin@univ-savoie.fr">pascal.colin@univ-savoie.fr</a></p>
+
+
+			  		</div>
+    			
+    			
+    		</div>
+    		</div>
+
+
+    </section >
+    <section id="me contacter" class="me contacter">
+    	<div class="contenair">
+    		<div class="section-header">
+    			<h2 class="section-title">Me Contacter</h2>
+    			
+    			<p>Developpeur Web</p>
+    		</div>
+    		</div>
+    	
+
+    </section >
+    
+    	
+    
+
+
+<footer>
+	<div class="contenair">
+		<div class="grid">
+			<div class="grid__item">
+				<p>Bagnegue christ</p>
+
+			</div>
+			<div class="grid__item">
+				
+					<ul class="socials list-unstyled">
+					<li><a href="https://google.fr" target="_blank">
+						
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg class="icon facebook" width="20px" height="20px" viewBox="126.445 2.281 589 589" xmlns="http://www.w3.org/2000/svg"><circle cx="420.945" cy="296.781" r="294.5" fill="#3c5a9a"/><path d="M516.704 92.677h-65.239c-38.715 0-81.777 16.283-81.777 72.402.189 19.554 0 38.281 0 59.357H324.9v71.271h46.174v205.177h84.847V294.353h56.002l5.067-70.117h-62.531s.14-31.191 0-40.249c0-22.177 23.076-20.907 24.464-20.907 10.981 0 32.332.032 37.813 0V92.677h-.032z" fill="#ffffff"/></svg>
+
+					</a></li>
+					<li><a href="https://google.fr" target="_blank">
+						
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg class="icon instagram" width="20px" height="20px" viewBox="0 0 3364.7 3364.7" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="0" cx="217.76" cy="3290.99" r="4271.92" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#fa8f21"/><stop offset=".78" stop-color="#d82d7e"/></radialGradient><radialGradient id="1" cx="2330.61" cy="3182.95" r="3759.33" gradientUnits="userSpaceOnUse"><stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"/><stop offset="1" stop-color="#8c3aaa"/></radialGradient></defs><path d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9" fill="url(#0)"/><path d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9" fill="url(#1)"/><path d="M1269.25,1689.52c0-230.11,186.49-416.7,416.6-416.7s416.7,186.59,416.7,416.7-186.59,416.7-416.7,416.7-416.6-186.59-416.6-416.7m-225.26,0c0,354.5,287.36,641.86,641.86,641.86s641.86-287.36,641.86-641.86-287.36-641.86-641.86-641.86S1044,1335,1044,1689.52m1159.13-667.31a150,150,0,1,0,150.06-149.94h-0.06a150.07,150.07,0,0,0-150,149.94M1180.85,2707c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28,7.27-505.15c5.55-121.87,26-188,43-232.13,22.72-58.36,49.78-100,93.5-143.78s85.32-70.88,143.78-93.5c44-17.16,110.26-37.46,232.13-43,131.76-6.06,171.34-7.27,505-7.27S2059.13,666,2191,672c121.87,5.55,188,26,232.13,43,58.36,22.62,100,49.78,143.78,93.5s70.78,85.42,93.5,143.78c17.16,44,37.46,110.26,43,232.13,6.06,131.87,7.27,171.34,7.27,505.15s-1.21,373.28-7.27,505.15c-5.55,121.87-25.95,188.11-43,232.13-22.72,58.36-49.78,100-93.5,143.68s-85.42,70.78-143.78,93.5c-44,17.16-110.26,37.46-232.13,43-131.76,6.06-171.34,7.27-505.15,7.27s-373.28-1.21-505-7.27M1170.5,447.09c-133.07,6.06-224,27.16-303.41,58.06-82.19,31.91-151.86,74.72-221.43,144.18S533.39,788.47,501.48,870.76c-30.9,79.46-52,170.34-58.06,303.41-6.16,133.28-7.57,175.89-7.57,515.35s1.41,382.07,7.57,515.35c6.06,133.08,27.16,223.95,58.06,303.41,31.91,82.19,74.62,152,144.18,221.43s139.14,112.18,221.43,144.18c79.56,30.9,170.34,52,303.41,58.06,133.35,6.06,175.89,7.57,515.35,7.57s382.07-1.41,515.35-7.57c133.08-6.06,223.95-27.16,303.41-58.06,82.19-32,151.86-74.72,221.43-144.18s112.18-139.24,144.18-221.43c30.9-79.46,52.1-170.34,58.06-303.41,6.06-133.38,7.47-175.89,7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2586.8,537.06,2504.71,505.15c-79.56-30.9-170.44-52.1-303.41-58.06C2068,441,2025.41,439.52,1686,439.52s-382.1,1.41-515.45,7.57" fill="#ffffff"/></svg>
+					</a></li>
+					<li><a href="https://google.fr" target="_blank">
+						
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg class="icon linkedin" width="20px" height="20px" viewBox="7.025 7.025 497.951 497.951" xmlns="http://www.w3.org/2000/svg"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-974.482" y1="1306.773" x2="-622.378" y2="1658.877" gradientTransform="translate(1054.43 -1226.825)"><stop offset="0" stop-color="#2489be"/><stop offset="1" stop-color="#0575b3"/></linearGradient><path d="M256 7.025C118.494 7.025 7.025 118.494 7.025 256S118.494 504.975 256 504.975 504.976 393.506 504.976 256C504.975 118.494 393.504 7.025 256 7.025zm-66.427 369.343h-54.665V199.761h54.665v176.607zM161.98 176.633c-17.853 0-32.326-14.591-32.326-32.587 0-17.998 14.475-32.588 32.326-32.588s32.324 14.59 32.324 32.588c.001 17.997-14.472 32.587-32.324 32.587zm232.45 199.735h-54.4v-92.704c0-25.426-9.658-39.619-29.763-39.619-21.881 0-33.312 14.782-33.312 39.619v92.704h-52.43V199.761h52.43v23.786s15.771-29.173 53.219-29.173c37.449 0 64.257 22.866 64.257 70.169l-.001 111.825z" fill="url(#a)"/></svg>
+					</a>
+				</li>
+				
+				</ul>
+				</div>
+
+			<div class="grid__item">
+
+
+				</div>
+				</div>
+				</div>
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+	</html>
+
+
